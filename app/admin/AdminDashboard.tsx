@@ -11,10 +11,8 @@ import {
   Phone,
   ChevronDown,
   TrendingUp,
-  ArrowLeft,
   LogOut,
 } from "lucide-react";
-import Link from "next/link";
 import { signOut } from "./actions";
 
 interface Enrollment {
@@ -117,14 +115,6 @@ export default function AdminDashboard({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <Link
-                href="/"
-                className="flex items-center gap-1.5 text-[#F8FAFC]/50 hover:text-[#D4AF37] text-sm font-body transition-colors"
-              >
-                <ArrowLeft size={16} />
-                <span className="hidden sm:inline">Вэбсайт руу буцах</span>
-              </Link>
-              <div className="w-px h-5 bg-[#F8FAFC]/10" />
               <div className="flex items-center gap-3">
                 <img
                   src="https://media.base44.com/images/public/6a388cb6d4946cb79c88b96e/c34f28b5f_logo.png"
